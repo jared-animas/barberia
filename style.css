@@ -1,0 +1,307 @@
+body{
+    font-family: 'Rajdhani', sans-serif;
+font-family: 'Teko', sans-serif;
+}
+
+
+header {
+    background-color: rgb(156, 153, 153);
+    padding: 20px 0;
+    
+}
+
+.caja {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 90px;
+    right: 0%;
+}
+
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+nav a:hover {
+    color: rgb(165, 141, 2);
+    text-decoration: underline;
+}
+
+.productos li:hover {
+    border-color: rgb(194, 149, 0);
+    font-size: 33px;
+}
+
+.productos li:active {
+    border-color: darkgreen;
+}
+
+.productos li:hover h2 {
+    font-size: 33px;
+}
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copy {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    margin: 20px;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: #ff6600;
+    transform: scale(1.02);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #533535;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+/* CSS para home */
+.banner {
+    width: 100%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.titulo-principal::first-letter {
+    font-weight: bold;
+}
+
+p::first-line {
+    font-style: italic;
+}
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(white, grey);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: gray;
+}
+
+.contenido-diferenciales {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-diferenciales {
+    display: inline-block !important;
+    vertical-align: top;
+    width: 40%;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items:before {
+    content: "★";
+}
+
+.items:first-child{ /*seudo clase */
+    font-weight: bold;
+}
+
+.imagen-Diferenciales {
+    width: 60%;
+    transition: 400ms;
+    box-shadow: 10px 10px 20px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.imagen-Diferenciales:hover {
+    opacity: 0.5;
+}
+
+.video {
+    width: 560px;
+    margin: 1em auto;
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video {
+        width: auto;
+    }
+    .lista-diferenciales, .imagen-Diferenciales {
+        width: 100%;
+    }
+    .productos {
+        width: max-content;
+        align-items: baseline;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  para seleccionar elementos especificos
+main > p {
+    background: red;
+}
+img + p {
+    background: blue;
+}
+img - p {
+    background: yellow;
+}
+
+*/
